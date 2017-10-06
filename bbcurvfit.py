@@ -8,7 +8,7 @@ from scipy.constants import h,k,c
 def func(wa, T):
     #print wa
     lam = 1e-6 * wa
-    print lam
+#    print lam
     return  2*h*c**2 / (lam**5 * (np.exp(h*c / (lam*k*T)) - 1))
 
 wa = np.linspace(0.1, 2, 100)
@@ -27,7 +27,7 @@ plt.plot(xdata, ydata, 'b-', label='data')
 print "About to fit"
 popt, pcov = curve_fit(func, xdata, ydata)
 
-print " popt = ", popt
+#print " popt = ", popt
 print "After fit"
 plt.plot(xdata, func(xdata, *popt), 'r-', label='fit')
 

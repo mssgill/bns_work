@@ -267,6 +267,6 @@ make_spectra_plots()
 ########## Call function to fit the spectrum to a bbody
 # (This requires make_spectra_plots() for some of the vars to be def'd)
 
-#do_bbody_fit()
+do_bbody_fit()
 
 # sys.exit()
